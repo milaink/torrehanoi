@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <title>Torre de Hanói</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+
+
+    <style>
+        div.esquerda {
+            position: absolute;
+            color: rgb(233, 137, 13);
+            top: 80px;
+            left: 5px;
+            width: 90px;
+            height: 170px;
+            border: none;
+            padding-right: 5px;
+            text-align: center;
+            vertical-align: baseline;
+            line-height: 23px;
+        }
+        
+        div.direita {
+            position: absolute;
+            top: 72px;
+            left: 95px;
+            width: 255px;
+            height: 215px;
+            border: none;
+            background-color: rgb(178, 233, 230);
+            padding: 10px;
+            text-align: left;
+            vertical-align: baseline;
+        }
+        
+        div.titulo {
+            position: absolute;
+            color: rgb(243, 121, 21);
+            top: 10px;
+            left: 95px;
+            width: 255px;
+            border: none;
+            background-color: rgb(178, 233, 230);
+            padding: 10px;
+            text-align: center;
+            vertical-align: baseline;
+        }
+    </style>
+</head>
+
+<body style="font-family:Saira;">
+
+    <div class="titulo">
+        <h2>Torre de Hanói</h2>
+    </div>
+    <br>
+    <form name="Torre">
+        <div class="esquerda">
+            <p>Resultado:</p>
+        </div>
+        <div class="direita">
+            <p><iframe type="text" src="pinos.html" height="190" width="250" name="resultado" style="text-align: left;" readonly="true"></iframe></p>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

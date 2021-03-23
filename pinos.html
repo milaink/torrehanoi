@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <title>Testes em JS</title>
+</head>
+
+<body style="font-family:Saira;">
+    <script>
+        function veja(frase) {
+            document.write(frase);
+            document.write("<br>");
+        }
+
+        var N = parseInt(prompt("DIGITE O NÚMERO DE DISCOS: "));
+        var passos = 1;
+
+        function mover(origem, destino) {
+
+            veja("Movimento: " + origem + " --> " + destino + " (" + (passos++) + ")");
+
+        }
+
+        function hanoi(N, origem, destino, suporte) {
+
+            if (N > 0) {
+                hanoi(N - 1, origem, suporte, destino);
+                mover(origem, destino);
+                hanoi(N - 1, suporte, destino, origem);
+
+            }
+        }
+
+        hanoi(N, "A", "C", "B");
+    </script>
+</body>
+
+</html>
